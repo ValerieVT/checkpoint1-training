@@ -1,3 +1,60 @@
+body{
+  margin:0;
+}
+
 section {
   padding: 3em 0;
 }
+
+header{
+  text-align:center;
+  padding:4em 0;
+  background-image: url('https://cdn.pixabay.com/photo/2015/07/02/10/13/sky-828648_960_720.jpg');
+  color:#eee;
+}
+
+section{
+  width:100%;
+  max-width:48em;
+  margin:auto;
+}
+
+nav ul{
+  display:flex;
+  justify-content:space-around;
+  flex-direction:row;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a:hover{
+  color:#005522;
+}
+
+.card{
+  width:100%;
+  margin:2%;
+  padding:0 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media only screen and (min-width:481px){
+  .cards{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:space-around;
+  }
+  .card{
+    width:46%;
+  }
+}
+@media only screen and (min-width:992px){
+  .card{
+    width:23%;
+  }
+}
+
